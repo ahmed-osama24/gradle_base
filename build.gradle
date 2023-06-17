@@ -20,6 +20,8 @@ buildscript {
     }
     dependencies {
         classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '4.0.0')
+        // Add the following line
+        id "com.jfrog.artifactory" version "4.4.18"
     }
 }
 
@@ -65,8 +67,4 @@ artifactory {
     resolve {
         repoKey = 'jcenter'
     }
-plugins {
-  id "com.jfrog.artifactory" version "4.4.18"
-}
-    
 }
