@@ -65,8 +65,8 @@ artifactory {
     resolve {
         repoKey = 'jcenter'
     }
-    
-}
 plugins {
   id "com.jfrog.artifactory" version "4.4.18"
+}
+    
 }
