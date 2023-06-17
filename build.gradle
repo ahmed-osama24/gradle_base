@@ -25,6 +25,10 @@ buildscript {
 
 version = currentVersion
 
+plugins {
+  id "com.jfrog.artifactory" version "4.4.18"
+}
+
 apply plugin: 'com.jfrog.artifactory'
 apply plugin: 'java'
 apply plugin: 'maven-publish'
